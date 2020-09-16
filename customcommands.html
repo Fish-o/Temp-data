@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
-    <link rel="stylesheet" href="assets/css/customcommands.css">
     <link rel="stylesheet" href="assets/css/discordembed.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
 </head>
@@ -37,7 +36,7 @@
                     <h2>Command Name:&nbsp;<input type="text" id="customcommandname" onchange="update();"></h2>
                     <h5>The command name supports regex<br>To make the command activate only at the beginning use:<br>^commandname</h5>
                 </div>
-                <h4 id="customcommandout">Add a command name and response to start!</h4>
+                <h4 id="customcommandout">Add a command name to start!</h4>
                 <div id="BLANKMODULE" class="project-card-no-image module" style="display: none;margin-top: 30px;opacity: 0;-webkit-transition: opacity 250ms ease-in;transition: opacity 250ms ease-in;">
                     <h2>Response:&nbsp;</h2><textarea class="textresponsesinp" onchange="update();"></textarea><br><button class="btn btn-outline-primary btn-sm" type="button" onclick="delete_card(this)">Delete</button></div>
                 <div id="all-modules">
@@ -45,6 +44,8 @@
                         <h2>Response:&nbsp;</h2><textarea class="textresponsesinp" onchange="update();"></textarea><br><button class="btn btn-outline-primary btn-sm" type="button" onclick="add_card(this)">Add</button></div>
                 </div>
             </div>
+            <h4 style="padding: 0;margin: 0;padding-right: 100px;padding-left: 100px;">Example command response: <br>Love meter between {user} and {mention}{w1}calculating...{w2}Their love is {r0|100}%<br><br>{user} - The user who called the command<br>{mention} - the user who was mentioned in the message<br>{w3} - waights for
+                3 seconds before sending the rest of the message<br>{r0|100} - returns a random number between 0 and 100<br><br></h4>
         </section>
     </main>
     <footer class="page-footer">
