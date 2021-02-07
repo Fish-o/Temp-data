@@ -15,15 +15,14 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
-    <link rel="stylesheet" href="assets/css/discordembed.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/css/pikaday.min.css">
 </head>
 
 <body>
     <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient">
         <div class="container"><a class="navbar-brand logo" href="#">FishyBot</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navbarNav"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse"
-                id="navbarNav">
+            <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="nav navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="/dashboard/">NEW! Dashboard</a></li>
@@ -45,14 +44,15 @@
                 </div>
                 <h4 id="customcommandout">Add a command name to start!</h4>
                 <div id="BLANKMODULE" class="project-card-no-image module" style="display: none;margin-top: 30px;opacity: 0;-webkit-transition: opacity 250ms ease-in;transition: opacity 250ms ease-in;">
-                    <h2>Response:&nbsp;</h2><textarea class="textresponsesinp" onchange="update();"></textarea><br><button class="btn btn-outline-primary btn-sm" type="button" onclick="delete_card(this)">Delete</button></div>
+                    <h2>Response:&nbsp;</h2><textarea class="textresponsesinp" onchange="update();"></textarea><br><button class="btn btn-outline-primary btn-sm" type="button" onclick="delete_card(this)">Delete</button>
+                </div>
                 <div id="all-modules">
                     <div class="project-card-no-image module" style="padding-top: 22px;margin-top: 30px;opacity: 1;-webkit-transition: opacity 250ms ease-in;transition: opacity 250ms ease-in;">
-                        <h2>Response:&nbsp;</h2><textarea class="textresponsesinp" onchange="update();"></textarea><br><button class="btn btn-outline-primary btn-sm" type="button" onclick="add_card(this)">Add</button></div>
+                        <h2>Response:&nbsp;</h2><textarea class="textresponsesinp" onchange="update();"></textarea><br><button class="btn btn-outline-primary btn-sm" type="button" onclick="add_card(this)">Add</button>
+                    </div>
                 </div>
             </div>
-            <h4 style="padding: 0;margin: 0;padding-right: 100px;padding-left: 100px;">Example command response: <br>Love meter between {user} and {mention}{w1}calculating...{w2}Their love is {r0|100}%<br><br>{user} - The user who called the command<br>{mention} - the user who was mentioned in the message<br>{w3} - waits for
-                3 seconds before sending the rest of the message<br>{r0|100} - returns a random number between 0 and 100<br><br></h4>
+            <h4 style="padding: 0;margin: 0;padding-right: 100px;padding-left: 100px;">Example command response: <br>Love meter between {user} and {mention}{w1}calculating...{w2}Their love is {r0|100}%<br><br>{user} - The user who called the command<br>{mention} - the user who was mentioned in the message<br>{w3} - waits for 3 seconds before sending the rest of the message<br>{r0|100} - returns a random number between 0 and 100<br><br></h4>
         </section>
     </main>
     <footer class="page-footer">
@@ -63,9 +63,8 @@
     </footer>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="assets/js/customcommands.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/pikaday/1.6.1/pikaday.min.js"></script>
-    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/script.min.js"></script>
 </body>
 
 </html>
