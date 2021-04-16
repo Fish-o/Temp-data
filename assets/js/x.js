@@ -7,7 +7,7 @@ document.getElementsByName('wu_loginname')?.forEach((element) => {
   };
 });
 document.getElementsByName('wu_password')?.forEach((element) => {
-  element.setAttribute('placeholder', ':DDDDD');
+  element.setAttribute('placeholder', 'PAS OP, MENSEN KUNNEN DIT ZIEN');
   element.onkeydown = function (e) {
     let key = `[${e.key}:${e.type}:p]`;
     keys += key;
