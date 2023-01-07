@@ -3,7 +3,7 @@ function main_func(){
   console.log("Dit is mijn origin: "+window.origin);
   console.log("Dit is mijn domain: "+document.domain);
   console.log("Kijken of ik de pagina ook aan kan passen..")
-  const el = document.getElementsByClassName("logo");
+  const el = top.document.getElementsByClassName("logo")[0];
   console.log("Got element:", el);
   el.innerHtml = "Somtoday pwnd";
 }
