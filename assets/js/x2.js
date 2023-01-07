@@ -5,6 +5,6 @@ function main_func(){
   console.log("Kijken of ik de pagina ook aan kan passen..")
   const el = top.document.getElementById("inbox-counter");
   console.log("Got element:", el);
-  el.innerHtml = "k dat was makkelijk";
+  el.innerHtml = "420";
 }
 main_func()
