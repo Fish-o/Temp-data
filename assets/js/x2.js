@@ -3,8 +3,8 @@ function main_func(){
   console.log("Dit is mijn origin: "+window.origin);
   console.log("Dit is mijn domain: "+document.domain);
   console.log("Kijken of ik de pagina ook aan kan passen..")
-  const el = top.document.getElementById("inbox-counter");
+  const el = document.getElementsByClassName("logo");
   console.log("Got element:", el);
-  el.innerHtml = "420";
+  el.innerHtml = "Somtoday pwnd";
 }
 main_func()
