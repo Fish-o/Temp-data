@@ -1,1 +1,3 @@
-console.log("Test");
+function funcy(){
+  console.log("Test");
+}
