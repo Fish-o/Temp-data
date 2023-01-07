@@ -3,8 +3,7 @@ function main_func(){
   console.log("Dit is mijn origin: "+window.origin);
   console.log("Dit is mijn domain: "+document.domain);
   console.log("Kijken of ik de pagina ook aan kan passen..")
-  const el = top.document.getElementsByClassName("logo")[0];
-  console.log("Got element:", el);
-  el.innerHtml = "Somtoday pwnd";
+  const name_el = document.getElementsByClassName("header")?.[0]?.innerHTML;
+  console.log("Name found:", name_el);
 }
 main_func()
